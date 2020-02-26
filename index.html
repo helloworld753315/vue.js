@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+    <h2>clickで色を変えます</h2>
+    <button class="btn_01" v-on:click='isActive=!isActive' v-bind:class='{active:isActive}'>クリック</button>
+  </div>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    var app=new Vue({
+
+      el:'#app',
+      data() {
+        return {
+          isActive:false
+        }
+      },
+    })
+
+  </script>
+
+</body>
+
+</html>
